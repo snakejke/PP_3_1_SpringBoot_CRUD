@@ -22,36 +22,22 @@ public class UserServiceImp implements UserService {
 
     @Override
     public List<User> getAllUsers() {
-        List<User> list = new ArrayList<>();
-        repository.findAll().forEach(list::add);
-        return list;
+        return repository.findAll();
     }
 
     @Override
     public User getUserById(Long id) {
-        User user = repository.findById(id).get();
-        return user;
+        return repository.findById(id).orElse(null);
     }
 
     @Override
-    public boolean saveUser(User user) {
-        try {
-            repository.save(user);
-            return true;
-        } catch (Exception ex) {
-            throw new RuntimeException("Failed to save user: " + ex.getMessage(), ex);
-        }
+    public void saveUser(User user) {
+        repository.save(user);
     }
 
     @Override
-    public boolean deleteUserById(Long id) {
-        try {
-            repository.deleteById(id);
-            return true;
-        } catch (Exception ex) {
-            return false;
-        }
-
+    public void deleteUser(Long id) {
+        repository.deleteById(id);
     }
 
 }

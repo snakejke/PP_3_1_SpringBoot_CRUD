@@ -10,8 +10,8 @@ public interface UserService {
 
     User getUserById(Long id);
 
-    boolean saveUser(User user);
+    void saveUser(User user);
 
-    boolean deleteUserById(Long id);
+    void deleteUser(Long id);
 
 }
