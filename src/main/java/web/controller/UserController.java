@@ -17,7 +17,7 @@ public class UserController {
 
     private UserService userService;
 
-    public UserController() {
+    public UserController() {//todo: mm.. зачем??
     }
 
     @Autowired

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PP_3_1_SpringBoot_CRUD:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>PP_3_1_SpringBoot_CRUD</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PP_3_1_SpringBoot_CRUD-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="PP_3_1_SpringBoot_CRUD:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -15,7 +15,7 @@ public class UserServiceImp implements UserService {
 
     @Autowired
     public UserServiceImp(UserRepository repository) {
-        super();
+//        super();//todo: mm.. зачем????
         this.repository = repository;
     }
 
